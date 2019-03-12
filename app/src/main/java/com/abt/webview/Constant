@@ -1,0 +1,8 @@
+package com.jooan.mall;
+
+public class Constant {
+
+    public static final String ALI_PAY = "alipay";
+    public static final String ALI_PAYS = "alipays:";
+
+}
