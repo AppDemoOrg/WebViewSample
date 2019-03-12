@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     
     private void initWebView() {
         mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.addJavascriptInterface(new JSBridge(), MallConstant.JS_INTERFACE);
+        mWebView.addJavascriptInterface(new JSBridge(), Constant.JS_INTERFACE);
         mWebView.loadUrl("file:///android_asset/index.html");
         //mWebView.loadUrl("https://www.baidu.com");// 需要特殊设置才能显示出来
         //mWebView.loadUrl("http://www.baidu.com");
