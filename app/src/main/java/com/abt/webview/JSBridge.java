@@ -4,13 +4,18 @@ import android.webkit.JavascriptInterface;
 
 public class JSBridge {
 
-    public JSBridge() {
+    private static final String TAG = "JSBridge";
 
+    @JavascriptInterface
+    public void setValue(String value) {
+        Log.d(TAG, "JS setValue: " + value);
     }
 
     @JavascriptInterface
-    public String getStr() {
-        return "str";
+    public String getValue() {
+        String str = "JS_Value";
+        Log.d(TAG, "JS getValue: " +str);
+        return str;
     }
 
     // Android4.2版本以上，本地方法要加上注解@JavascriptInterface，否则会找不到方法。
